@@ -1,0 +1,35 @@
+body,h1,h2,ul,li,nav,section,footer {
+  margin: 0px;
+}
+
+nav {
+  background-color: #c4ff6b;
+  padding: 10px;
+}
+
+section {
+  background-color: #c2ff99;
+  text-align: center;
+}
+
+ul li {
+  background-color: #ffffff;
+  display: inline;
+  padding: 4px;
+}
+
+ul {
+  text-align: center;
+}
+
+section div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
