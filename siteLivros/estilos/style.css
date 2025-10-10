@@ -24,11 +24,32 @@ ul {
 
 section div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* justify-items: center; */
+  align-items: center;
+}
+
+section div h1{
+  grid-column: 1/4;
+  padding: 2rem 0rem 1rem;
 }
 
 img {
   max-width: 100%;
+}
+
+div img{
+  grid-column: 2;
+}
+
+section div p{
+  grid-column: 3/5;
+  padding: 1rem;
+  align-items: center;
+}
+
+section h1{
+  
 }
 
 
