@@ -6,7 +6,13 @@ body,h1,h2,ul,li,nav,section,footer {
 nav {
   background-color: #c4ff6b;
   padding: 10px;
-  outline: none;
+  
+
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
 }
 
 section {
