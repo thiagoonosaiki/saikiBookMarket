@@ -1,4 +1,11 @@
-body,h1,h2,ul,li,nav,section,footer {
+body,
+h1,
+h2,
+ul,
+li,
+nav,
+section,
+footer {
   margin: 0px;
   padding: 0;
 }
@@ -6,11 +13,9 @@ body,h1,h2,ul,li,nav,section,footer {
 nav {
   background-color: #c4ff6b;
   padding: 10px;
-  
-
 }
 
-nav ul li a{
+nav ul li a {
   color: black;
   text-decoration: none;
 }
@@ -18,28 +23,33 @@ nav ul li a{
 section {
   background-color: #c2ff99;
   text-align: center;
-  min-height: 100vh;/* faz com que a cor fique para o site todo*/
+  min-height: 100vh; /* faz com que a cor fique para o site todo*/
   padding: 2rem;
 }
 
+section div strong,
+input {
+  font-size: 2rem;
+}
+
 ul li {
-  background-color: #ffffff;
   display: inline;
   padding: 4px;
+  font-weight: bolder;
 }
 
 ul {
   text-align: center;
 }
 
-section div {
+.gridLivros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* justify-items: center; */
   align-items: center;
 }
 
-section div h1{
+section div h1 {
   grid-column: 1/4;
   padding: 2rem 0rem 1rem;
 }
@@ -48,18 +58,14 @@ img {
   max-width: 100%;
 }
 
-div img{
+div img {
   grid-column: 2;
 }
 
-section div p{
+section div p {
   grid-column: 3/5;
   padding: 1rem;
   align-items: center;
-}
-
-section h1{
-  
 }
 
 .container {
@@ -94,19 +100,25 @@ footer {
   /* Ignora esse também*/
 }
 
-
-
-.buttonconfig { /*botão de configuração*/
+.buttonconfig {
+  /*botão de configuração*/
   border: none; /*remove a borda*/
   outline: none; /* remove o controno de foco, o azul*/
   text-align: left;
   background-color: #c2ff99;
 }
 
-.foto {
+.gridFoto {
   background-color: #c2ff99;
   justify-content: center;
   align-items: center;
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* justify-items: center; */
+  align-items: center;
+}
 
+.foto h2 {
+  grid-column: 3/5;
 }
